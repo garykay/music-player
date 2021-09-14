@@ -76,6 +76,10 @@
     opacity: 1;
 }
 
+.selected {
+    background: rgb(168, 167, 233);
+}
+
 @media screen and (max-width: 768px) {
     .library {
         width: 100%;
