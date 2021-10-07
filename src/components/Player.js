@@ -33,6 +33,12 @@ const Player = ({
         setSongs(newSongs);
     }, [currentSong]);
 
+    // Add the styles 
+
+    const tracAnim = {
+        transform: `translateX(${songInfo.animationPercentage}%)`
+    }
+
     const playSongHandler = () => {
         if (isPlaying) {
             audioRef.current.pause();
@@ -79,11 +85,7 @@ const Player = ({
 
     }
 
-    // Add the styles 
 
-    const tracAnim = {
-        transform: `translateX(${songInfo.animationPercentage}%)`
-    }
 
 
     return (
